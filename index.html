@@ -47,6 +47,132 @@
         border-left: 10px solid greenyellow;
         border-right: 10px solid greenyellow;
         color: red;
+      }<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雷伊自创网站</title>
+    <style>
+      body {
+        margin: 0;
+        height: 1000px;
+        height: 100vh;
+        background-color: black;
+      }
+      .yinYing {
+        box-shadow: 10px 10px 5px #888888;
+      }
+
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daoHang {
+        padding: 10px 20px;
+        border-bottom: 10px solid greenyellow;
+        font-size: 15px;
+        color: aqua;
+      }
+      .bianKuang {
+        border-bottom: 10px solid greenyellow;
+        border-left: 10px solid greenyellow;
+        border-right: 10px solid greenyellow;
+        color: red;
+      }
+      <!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雷伊自创网站</title>
+    <style>
+      body {
+        margin: 0;
+        height: 1000px;
+        height: 100vh;
+        background-color: black;
+      }
+      .yinYing {
+        box-shadow: 10px 10px 5px #888888;
+      }
+
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daoHang {
+        padding: 10px 20px;
+        border-bottom: 10px solid greenyellow;
+        font-size: 15px;
+        color: aqua;
+      }
+      .bianKuang {
+        border-bottom: 10px solid greenyellow;
+        border-left: 10px solid greenyellow;
+        border-right: 10px solid greenyellow;
+        color: red;
+      }
+      @media (max-width:600PX) {
+        /*当屏幕宽度小于600px时消失某一个块 */
+        .xiaoShi {
+          display:none ;
+        }
+        /*当屏幕宽度小于600px时将块竖向分布*/
+        .neiRong {
+          flex-direction: column;
+        }
+        /*当屏幕宽度小于600px时将块竖向分布*/
+        .shuJuQu{
+          flex-direction: column;
+        }
+        /*左边距为(8px)*/
+        .youQu{
+          margin-left: 8px;;
+        }
+        /*flex控制整个快的占据大小*/
+        .shuJu{
+          margin: 0 10 8px
+          ; flex:auto;
+        }
+      }
+      /*消除滚动条*/
+      .neiRong::-webkit-scrollbar{
+        display: none;
       }
     </style>
   </head>
@@ -166,6 +292,339 @@
 
               </p>
             </div>
+            <div style="height: 250px" class="baiSe mgt8 yinYing">
+            <div><a  href="https://github.com/QWRJJK/qrj.com" target="_blank">a标签=跳转链接</a>
+              <p>href=地址<b>（邮箱前加上mailto:可直接跳转邮箱）</b></p>
+            <p>加入targe-blank不覆盖原网页</p></div>
+              
+            
+            </div>
+            <div style="height: 250px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 250px" class="baiSe mgt8 yinYing"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <!--提示区-->
+          <div style=" height: 100px" class="baiSe yinYing">
+            <div  style="color: red;" class="flex"><div><p><b>在Github上</b></p>
+              <p>上传个人网站注意事项</p></div>
+              
+           </div>
+            
+          </div>           
+          <!--消息区-->
+        <div style="height: 850px" class="baiSe mgt8 yinYing flex"> 
+          <div><p>1：创建个人文件仓库时仓库名字个=格式必须是Github上个人的id+github+io</p>
+            <P>2:创建玩仓库之后新建文件夹名字必须是index.html</P>
+          </div>
+      
+        </div>
+        
+           </div>             
+          </div>         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2" class="baiSe yinYing">
+      <!--头像-->
+      <div style="border-bottom: 1px solid black" class="flex">
+        <img
+          src="https://p.qqan.com/up/2021-2/16138782426739637.jpg"
+          alt="头像"
+          width="66px"
+          height="54px"
+        />
+        <div
+          style="
+            margin-left: 5px;
+            margin-top: 8px;
+            color: aqua;
+            font-size: 25px;
+          "
+        >
+          呆呆鲨
+        </div>
+      </div>
+      <!--基础教程-->
+      <div class="flex1">
+        <!--文字居中代码-->
+        <div
+          style="
+            margin: 0px;
+            text-align: center;
+            border-bottom-color: green;
+            border-bottom-style: solid;
+          "
+        >
+          基础教程
+        </div>
+        <!--。-->
+        <div class="daoHang">快捷代码=.+快捷代码<b>如baiSe（白色）</b>+{}</div>
+        <div class="daoHang">
+          {}中加入正常的CSS代码<b>如上文daoHang快捷代码</b>
+        </div>
+        <div class="daoHang">文字居中代码=text-alignn: center;</div>
+        <div class="daoHang">
+          <b>网页基础代码意思</b>
+          <p>title=页面标签</p>
+          <p>输入HTML获得网页基础代码</p>
+          <p>从body开始编辑</p>
+        </div>
+        <div class="daoHang">
+          <b>常用代码意思</b>
+          <p>width=宽 height=高</p>
+          <p>color=颜色</p>
+          <p>background-color=背景颜色</p>
+          <p>font-size=字体大小</p>
+        </div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div style="background-color: whitesmoke" class="flex1 flex column">
+      <!--头部栏-->
+      <div
+        style="height: 60px; text-align: center; font-size: 40px"
+        class="baiSe yinYing daoHang"
+      >
+        加入多个style属性每个属性中间需要用;<b>（分号）</b>隔开
+      </div>
+      <!--内容区-->
+      <div style="overflow: scroll" class="flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区-->
+          <div class="flex">
+            <!--数据块-->
+            <div
+              style="height: 100px; padding-left: 10px"
+              class="flex1 baiSe mgr8 yinYing bianKuang"
+            >
+              <p>maright=外边距</p>
+              <p>border=边框</p>
+            </div>
+            <div
+              style="height: 100px; padding-left: 10px"
+              class="flex1 baiSe mgr8 yinYing bianKuang"
+            >
+              <p>img=图片标签</p>
+              <p>src=图片位置</p>
+            </div>
+            <div
+              style="height: 100px; padding-left: 10px"
+              class="flex1 baiSe mgr8 yinYing bianKuang"
+            >
+              flex-direction=定义主轴方向（边框内的文字排列顺序）
+              <p>失效时加入dispaly-flex解决</p>
+            </div>
+            <div
+              style="overflow: scroll; height: 100px; padding-left: 10px"
+              class="flex1 baiSe mgr8 yinYing bianKuang"
+            >
+              <p>overflow: scroll设置滚轮翻页</p>
+              <p>比如自身代码</p>
+            </div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+            <div
+              style="overflow: scroll; height: 250px"
+              class="baiSe mgt8 yinYing"
+            >
+              <p>控制边框粗细.颜色用border+方向+边框数值+solid+颜色</p>
+              <p>
+                padding=填充<b>（边框内文字与边框的距离）</b>使用方法padding+方向+数值
+              </p>
+              <p style="color: red;">dispaly-flex在方块内控制方块的必要代码+加在主方块中
+
+              </p>
+            </div>
+            <div style="height: 250px" class="baiSe mgt8 yinYing">
+            <div><a  href="https://github.com/QWRJJK/qrj.com" target="_blank">a标签=跳转链接</a>
+              <p>href=地址<b>（邮箱前加上mailto:可直接跳转邮箱）</b></p>
+            <p>加入targe-blank不覆盖原网页</p></div>
+              
+            
+            </div>
+            <div style="height: 250px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 250px" class="baiSe mgt8 yinYing"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <!--提示区-->
+          <div style=" height: 100px" class="baiSe yinYing">
+            <div  style="color: red;" class="flex"><div><p><b>在Github上</b></p>
+              <p>上传个人网站注意事项</p></div>
+              
+           </div>
+            
+          </div>           
+          <!--消息区-->
+        <div style="height: 850px" class="baiSe mgt8 yinYing flex"> 
+          <div><p>1：创建个人文件仓库时仓库名字个=格式必须是Github上个人的id+github+io</p>
+            <P>2:创建玩仓库之后新建文件夹名字必须是index.html</P>
+          </div>
+      
+        </div>
+        
+           </div>             
+          </div>         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2" class="baiSe yinYing">
+      <!--头像-->
+      <div style="border-bottom: 1px solid black" class="flex">
+        <img
+          src="https://p.qqan.com/up/2021-2/16138782426739637.jpg"
+          alt="头像"
+          width="66px"
+          height="54px"
+        />
+        <div
+          style="
+            margin-left: 5px;
+            margin-top: 8px;
+            color: aqua;
+            font-size: 25px;
+          "
+        >
+          呆呆鲨
+        </div>
+      </div>
+      <!--基础教程-->
+      <div class="flex1">
+        <!--文字居中代码-->
+        <div
+          style="
+            margin: 0px;
+            text-align: center;
+            border-bottom-color: green;
+            border-bottom-style: solid;
+          "
+        >
+          基础教程
+        </div>
+        <!--。-->
+        <div class="daoHang">快捷代码=.+快捷代码<b>如baiSe（白色）</b>+{}</div>
+        <div class="daoHang">
+          {}中加入正常的CSS代码<b>如上文daoHang快捷代码</b>
+        </div>
+        <div class="daoHang">文字居中代码=text-alignn: center;</div>
+        <div class="daoHang">
+          <b>网页基础代码意思</b>
+          <p>title=页面标签</p>
+          <p>输入HTML获得网页基础代码</p>
+          <p>从body开始编辑</p>
+        </div>
+        <div class="daoHang">
+          <b>常用代码意思</b>
+          <p>width=宽 height=高</p>
+          <p>color=颜色</p>
+          <p>background-color=背景颜色</p>
+          <p>font-size=字体大小</p>
+        </div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div style="background-color: whitesmoke" class="flex1 flex column">
+      <!--头部栏-->
+      <div
+        style="height: 60px; text-align: center; font-size: 40px"
+        class="baiSe yinYing daoHang"
+      >
+        加入多个style属性每个属性中间需要用;<b>（分号）</b>隔开
+      </div>
+      <!--内容区-->
+      <div style="overflow: scroll" class="flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区-->
+          <div class="flex">
+            <!--数据块-->
+            <div
+              style="height: 100px; padding-left: 10px"
+              class="flex1 baiSe mgr8 yinYing bianKuang"
+            >
+              <p>maright=外边距</p>
+              <p>border=边框</p>
+            </div>
+            <div
+              style="height: 100px; padding-left: 10px"
+              class="flex1 baiSe mgr8 yinYing bianKuang"
+            >
+              <p>img=图片标签</p>
+              <p>src=图片位置</p>
+            </div>
+            <div
+              style="height: 100px; padding-left: 10px"
+              class="flex1 baiSe mgr8 yinYing bianKuang"
+            >
+              flex-direction=定义主轴方向（边框内的文字排列顺序）
+              <p>失效时加入dispaly-flex解决</p>
+            </div>
+            <div
+              style="overflow: scroll; height: 100px; padding-left: 10px"
+              class="flex1 baiSe mgr8 yinYing bianKuang"
+            >
+              <p>overflow: scroll设置滚轮翻页</p>
+              <p>比如自身代码</p>
+            </div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+           <div
+              style="overflow: scroll; height: 250px"
+              class="baiSe mgt8 yinYing"
+            >
+              <p>控制边框粗细.颜色用border+方向+边框数值+solid+颜色</p>
+              <p>
+                padding=填充<b>（边框内文字与边框的距离）</b>使用方法padding+方向+数值
+              </p>
+              <p style="color: red;">dispaly-flex在方块内控制方块的必要代码+加在主方块中
+
+              </p>
+              <p>适应不同屏幕大小修改:@media------(max(最大值)-width(宽度)){------}</p>
+            </div>
+            <div style="overflow: scroll; height: 250px" class="baiSe mgt8 yinYing flex">
+              <div style="color: red;">点赞❤
+              <button id="dzs" onclick="dianZan()">0</button>
+    <script>
+      function dianZan() {
+        let dianZanShuBiaoQian = window.document.getElementById("dzs");
+        let dianZanShu = parseInt(dianZanShuBiaoQian.innerText);
+        let xinShuZi = dianZanShu + 1;
+        dianZanShuBiaoQian.innerText = xinShuZi;
+        return;
+      }
+    </script>
+    <div><p>button=按钮 onclick=点击 （检测鼠标点击行为）<div>当鼠标点击button中的标签时会调用其名字（id）后的函数<p>id在button后设定</p></div></p> </div>
+  <p> script=设定函数（设定的函数写在function中）</p>
+  <p> function=函数 let设定函数的前缀</p>
+  <p> window=窗口 document=文档</p>
+  <p> getElementById中get=获取element=元素By=通过Id=button后的id（id后要加括号（括号中要加""））</p>
+<P>parseInt中parse=转化int=整数</P><p>innerText中inner=内部text=文字</p>
+<p>设定一个新数值（=点赞数+1）</p>
+<p>最后吧新数字给到标签内部文本（-----.innerTex=新数字）</p>
+<p>return有没有都行</p>
+  </div>
+        </div>
+            
             <div style="height: 250px" class="baiSe mgt8 yinYing">
             <div><a  href="https://github.com/QWRJJK/qrj.com" target="_blank">a标签=跳转链接</a>
               <p>href=地址<b>（邮箱前加上mailto:可直接跳转邮箱）</b></p>
