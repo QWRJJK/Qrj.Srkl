@@ -38,7 +38,7 @@
       c.height = window.innerHeight;
       // ctx.fillRect(0,0,100,100);
       // a,b,c,d分别代表x方向偏移,y方向偏移,宽，高
-      var string1 = "abcdefghijklmnopqrstuvwxyz";
+      var string1 = "❤";
       string1.split("");
       var fontsize = 20;
       columns = c.width / fontsize;
@@ -65,7 +65,7 @@
           }
         }
       }
-      setInterval(drap, 50);
+      setInterval(drap, 75);
     </script>
     <canvas id="pinkboard"></canvas>
     <script>
@@ -74,11 +74,11 @@
        */
       var settings = {
         particles: {
-          length: 1000, // maximum amount of particles
-          duration: 3, // particle duration in sec
-          velocity: 200, // particle velocity in pixels/sec
-          effect: -0.75, // play with this for a nice effect
-          size: 30, // particle size in pixels
+          length: 2000, // 最大颗粒数量
+          duration: 1, // 粒子持续时间 （秒）
+          velocity: 300, // 粒子速度（像素/秒）
+          effect: -1, // 玩这个以获得很好的效果
+          size: 45, // 粒子大小（以像素为单位）
         },
       };
       /*
@@ -196,14 +196,14 @@
           firstFree = 0,
           duration = settings.particles.duration;
         function ParticlePool(length) {
-          // create and populate particle pool
+          // 创建并填充粒子池
           particles = new Array(length);
           for (var i = 0; i < particles.length; i++)
             particles[i] = new Particle();
         }
         ParticlePool.prototype.add = function (x, y, dx, dy) {
           particles[firstFree].initialize(x, y, dx, dy);
-          // handle circular queue
+          // 处理循环队列
           firstFree++;
           if (firstFree == particles.length) firstFree = 0;
           if (firstActive == firstFree) firstActive++;
@@ -211,7 +211,7 @@
         };
         ParticlePool.prototype.update = function (deltaTime) {
           var i;
-          // update active particles
+          // 更新活动粒子
           if (firstActive < firstFree) {
             for (i = firstActive; i < firstFree; i++)
               particles[i].update(deltaTime);
@@ -222,7 +222,7 @@
             for (i = 0; i < firstFree; i++)
               particles[i].update(deltaTime);
           }
-          // remove inactive particles
+          // 去除非活性粒子
           while (
             particles[firstActive].age >= duration &&
             firstActive != firstFree
@@ -232,7 +232,7 @@
           }
         };
         ParticlePool.prototype.draw = function (context, image) {
-          // draw active particles
+          // 绘制活动粒子
           if (firstActive < firstFree) {
             for (i = firstActive; i < firstFree; i++)
               particles[i].draw(context, image);
@@ -247,14 +247,14 @@
         return ParticlePool;
       })();
       /*
-       * Putting it all together
+       * 把它们放在一起
        */
       (function (canvas) {
         var context = canvas.getContext("2d"),
           particles = new ParticlePool(settings.particles.length),
           particleRate =
             settings.particles.length /
-            settings.particles.duration, // particles/sec
+            settings.particles.duration, // 颗粒/秒
           time;
         // get point on heart with -PI <= t <= PI
         function pointOnHeart(t) {
@@ -267,13 +267,13 @@
               25
           );
         }
-        // creating the particle image using a dummy canvas
+        // 使用虚拟画布创建粒子图像
         var image = (function () {
           var canvas = document.createElement("canvas"),
             context = canvas.getContext("2d");
           canvas.width = settings.particles.size;
           canvas.height = settings.particles.size;
-          // helper function to create the path
+          // helper 函数创建路径
           function to(t) {
             var point = pointOnHeart(t);
             point.x =
@@ -284,7 +284,7 @@
               (point.y * settings.particles.size) / 350;
             return point;
           }
-          // create the path
+          //创建路径
           context.beginPath();
           var t = -Math.PI;
           var point = to(t);
@@ -348,5 +348,3 @@
     </script>
   </body>
 </html>
-
-
